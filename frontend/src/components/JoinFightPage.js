@@ -1,0 +1,19 @@
+import React, { Component } from "react";
+
+export default class JoinFightPage extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <>
+        <h1>
+            Join Fight
+        </h1>
+
+      </>
+    );
+  }
+}
+
