@@ -1,5 +1,5 @@
 """
-WSGI config for diversity_back_main project.
+WSGI config for sat_prep_app project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'diversity_back_main.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sat_prep_app.settings')
 
 application = get_wsgi_application()
