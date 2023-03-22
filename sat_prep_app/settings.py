@@ -39,8 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'rest_framework',
-    'frontend.apps.FrontendConfig'
+    'frontend.apps.FrontendConfig',
+    'user_management' #ADDED
 ]
+
+AUTH_USER_MODEL = 'user_management.User' #ADDED
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

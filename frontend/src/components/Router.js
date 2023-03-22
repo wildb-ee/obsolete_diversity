@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import JoinFightPage from "./JoinFightPage";
 import CreateFightPage from "./CreateFightPage";
-import NoPage from "./NoPage";
 import Layout from "./Layout";
 import HomePage from './HomePage';
 import {
@@ -9,6 +8,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import LoginPage from "./LoginPage";
+import RegisterPage from "./RegisterPage";
 
 export default class Router extends Component {
   constructor(props) {
@@ -23,6 +24,8 @@ export default class Router extends Component {
                 <Route index element={<HomePage/>} />
                 <Route path="join" element={<JoinFightPage />} />
                 <Route path="create" element={<CreateFightPage />} />
+                <Route path="register" element= {<RegisterPage />} />
+                <Route path="login" element= {<LoginPage />} />
             </Route>
         </Routes>
         </BrowserRouter>
