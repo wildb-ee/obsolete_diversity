@@ -94,10 +94,10 @@ class RegisterView(APIView):
 			if user:
 				return Response(serializer.data, status=status.HTTP_201_CREATED)
 		return Response(status=status.HTTP_400_BAD_REQUEST)
-
+ 
 class UserView(APIView):
-	# permission_classes = (permissions.IsAuthenticated,)
-	# authentication_classes = (SessionAuthentication,)
+	permission_classes = (permissions.IsAuthenticated,)
+	authentication_classes = (SessionAuthentication,)
 	##
 	def get(self, request):
 		serializer = UserSerializer(request.user)

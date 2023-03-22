@@ -5,6 +5,8 @@ import NoPage from "./NoPage";
 import Layout from "./Layout";
 import HomePage from './HomePage';
 import Fight from "./Fight";
+import SignIn from "./SignIn";
+import Login from "./Login";
 import {
   BrowserRouter,
   Routes,
@@ -25,6 +27,8 @@ export default class Router extends Component {
                 <Route path="join" element={<JoinFightPage />} />
                 <Route path="create" element={<CreateFightPage />} />
                 <Route path="fight/:fightCode" element={<Fight />} />
+                <Route path="register" element= {<SignIn />} />
+                <Route path="login" element= {<Login />} />
             </Route>
         </Routes>
         </BrowserRouter>
